@@ -1,3 +1,14 @@
+#Keep getting This error.:
+
+sqlalchemy.exc.OperationalError
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: content
+[SQL: SELECT content.id AS content_id, content.title AS content_title, content.slug AS content_slug, content.type_id AS content_type_id, content.body AS content_body, content.created_at AS content_created_at, content.updated_at AS content_updated_at 
+FROM content 
+WHERE content.slug = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('home', 1, 0)]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
 # Add Authentication to a Flask CMS
 
 ## Status
